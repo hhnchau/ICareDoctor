@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorMain</item>
+        <item name="boxStrokeWidth">1dip</item>
+        <item name="boxCornerRadiusBottomStart">84dp</item>
+        <item name="boxCornerRadiusBottomEnd">84dp</item>
+        <item name="boxCornerRadiusTopStart">84dp</item>
+        <item name="boxCornerRadiusTopEnd">84dp</item>
+    </style>
+</resources>

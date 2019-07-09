@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorMain">#00BCD4</color>
+    <color name="colorMainLight">#cbf1f5</color>
+    <color name="transparent">#00000000</color>
+    <color name="disable">#e0e0e0</color>
+    <color name="bg">#f4f4f4</color>
+    <color name="bk">#000000</color>
+    <color name="bk_85p">#C5000000</color>
+    <color name="bk_50p">#80000000</color>
+    <color name="bk_40p">#40000000</color>
+    <color name="bk_30p">#e9e9e9</color>
+    <color name="white">#ffffff</color>
+    <color name="org">#ff6400</color>
+    <color name="blue">#00BCD4</color>
+    <color name="green">#5EA477</color>
+    <color name="red">#f50404</color>
+    <color name="yellow">#ffdd00</color>
+    <color name="grey">#bdbdbd</color>
+
+    <color name="text_label">#9e9e9e</color>
+    <color name="text_color">#424242</color>
+
+</resources>

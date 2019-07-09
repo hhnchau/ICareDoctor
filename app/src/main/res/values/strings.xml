@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ICareDoctor</string>
+
+    <string-array name="item_page">
+        <item>@string/txt_history_clinic</item>
+        <item>@string/txt_notify</item>
+        <item>@string/txt_version</item>
+        <item>@string/txt_logout</item>
+    </string-array>
+    <string name="txt_history_clinic">Lịch Sử Khám Bệnh</string>
+    <string name="txt_notify">Thông Báo</string>
+    <string name="txt_version">Phiên Bản</string>
+    <string name="txt_logout">Đăng Xuất</string>
+
+
+    <string name="txt_fullname">Họ và Tên</string>
+    <string name="txt_phone">Điện Thoại</string>
+    <string name="txt_password">Mật Khẩu</string>
+    <string name="txt_forgot_password">Quên Mật Khẩu?</string>
+    <string name="txt_register">Đăng Ký</string>
+    <string name="txt_login">Đăng Nhập</string>
+</resources>
