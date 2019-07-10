@@ -23,11 +23,10 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/tvLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/v2"
         app:layout_constraintStart_toStartOf="@id/v1"
         app:layout_constraintTop_toTopOf="@id/h2">
-
 
         <EditText
             android:id="@+id/edtPhone"
@@ -41,55 +40,16 @@
             android:inputType="phone"
             android:textSize="@dimen/sp_16" />
 
-        <EditText
-            android:id="@+id/edtPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_6"
-            android:drawableStart="@drawable/ic_password"
-            android:paddingStart="@dimen/dp_12"
-            android:paddingEnd="@dimen/dp_12"
-            android:hint="@string/txt_password"
-            android:inputType="textPassword"
-            android:textSize="@dimen/sp_16" />
-
-        <TextView
-            android:id="@+id/edtUserName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_6"
-            android:gravity="end"
-            android:hint="@string/txt_forgot_password"
-            android:textColor="@color/grey"
-            android:textSize="@dimen/sp_12"
-            android:textStyle="italic"
-            android:onClick="forgotPass"/>
-
         <Button
             android:id="@+id/btnOk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_6"
-            android:text="@string/txt_login"
-            android:textSize="@dimen/sp_16" />
+            android:text="@string/txt_reset_pass"
+            android:textSize="@dimen/sp_16"
+            android:onClick="resetPass"/>
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/tvLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:padding="@dimen/dp_8"
-        android:text="@string/txt_register"
-        android:textColor="@color/red"
-        android:textSize="@dimen/sp_14"
-        android:onClick="gotoRegister"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/box"
-        app:layout_constraintVertical_bias="1" />
 
     <android.support.constraint.Guideline
         android:id="@+id/h1"

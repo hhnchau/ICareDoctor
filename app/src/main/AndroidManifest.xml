@@ -33,6 +33,10 @@
         <activity
             android:name=".activity.RegisterActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ForgotActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
