@@ -14,8 +14,8 @@ public class Fragmenttz {
                 toolbarLeft.setImageResource(R.drawable.ic_launcher_background);
                 toolbarRight.setImageResource(0);
                 break;
-            case FRAGMENT_MAP:
-                toolbarTile.setText(context.getString(R.string.screen_map));
+            case FRAGMENT_SCHEDULE:
+                toolbarTile.setText(context.getString(R.string.screen_schedule));
                 toolbarLeft.setImageResource(R.drawable.ic_launcher_background);
                 toolbarRight.setImageResource(0);
                 break;

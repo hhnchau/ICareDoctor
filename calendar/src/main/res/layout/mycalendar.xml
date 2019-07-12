@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/sp_17" />
+
+        <ImageView
+            android:id="@+id/icLeft"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center|start"
+            android:contentDescription="@string/img"
+            android:padding="@dimen/dp_6"
+            android:src="@drawable/ic_arrow_left"/>
+
+        <ImageView
+            android:id="@+id/icRight"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center|end"
+            android:contentDescription="@string/img"
+            android:padding="@dimen/dp_6"
+            android:src="@drawable/ic_arrow_right"/>
+    </FrameLayout>
+
+    <include layout="@layout/dayofweek" />
+
+    <include layout="@layout/dayofmonth1" />
+
+    <include layout="@layout/dayofmonth2" />
+
+    <include layout="@layout/dayofmonth3" />
+
+    <include layout="@layout/dayofmonth4" />
+
+    <include layout="@layout/dayofmonth5" />
+
+    <include layout="@layout/dayofmonth6" />
+
+</LinearLayout>

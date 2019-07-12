@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <vn.ptt.calendar.Cell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:tag="dayOfWeek1"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:tag="dayOfWeek2"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:tag="dayOfWeek3"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:tag="dayOfWeek4"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:tag="dayOfWeek5"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:tag="dayOfWeek6"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:tag="dayOfWeek7"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

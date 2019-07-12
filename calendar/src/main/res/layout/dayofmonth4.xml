@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <vn.ptt.calendar.Cell
+        android:tag="dayOfMonth22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:tag="dayOfMonth23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:tag="dayOfMonth24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:tag="dayOfMonth25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:tag="dayOfMonth26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:tag="dayOfMonth27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16" />
+
+    <vn.ptt.calendar.Cell
+        android:tag="dayOfMonth28"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

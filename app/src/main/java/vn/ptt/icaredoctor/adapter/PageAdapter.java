@@ -26,8 +26,15 @@ public class PageAdapter extends RecyclerView.Adapter<PageAdapter.MyViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int i) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, int i) {
         holder.txt.setText(lst.get(i).toString());
+        holder.txt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (onPageListener != null)
+                    onPageListener.onListener(lst.get(holder.getAdapterPosition()).toString());
+            }
+        });
     }
 
     @Override
@@ -42,6 +49,16 @@ public class PageAdapter extends RecyclerView.Adapter<PageAdapter.MyViewHolder> 
             super(itemView);
             txt = itemView.findViewById(R.id.tvName);
         }
+    }
+
+    public interface OnPageListener {
+        void onListener(String clazz);
+    }
+
+    private OnPageListener onPageListener;
+
+    public void setOnPageListener(OnPageListener onPageListener) {
+        this.onPageListener = onPageListener;
     }
 }
 

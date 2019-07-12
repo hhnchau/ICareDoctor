@@ -9,13 +9,13 @@ import android.view.ViewGroup;
 
 import vn.ptt.icaredoctor.R;
 
-public class MapFragment extends BaseFragment {
+public class ScheduleFragment extends BaseFragment {
     private View view;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_map, container, false);
+        view = inflater.inflate(R.layout.fragment_schedule, container, false);
         return view;
     }
 }

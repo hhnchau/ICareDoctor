@@ -8,6 +8,7 @@
         <item>@string/txt_version</item>
         <item>@string/txt_logout</item>
     </string-array>
+    <string name="txt_profile">Hồ Sơ</string>
     <string name="txt_history_clinic">Lịch Sử</string>
     <string name="txt_schedule">Lịch Hẹn</string>
     <string name="txt_notify">Thông Báo</string>
@@ -22,7 +23,7 @@
     <string name="txt_reset_pass">Đặt Lại Mật Khẩu</string>
 
     <string name="screen_home">@string/app_name</string>
-    <string name="screen_map">Đặt Lịch Khám</string>
+    <string name="screen_schedule">Đặt Lịch Khám</string>
     <string name="screen_page">Hồ Sơ</string>
 
 </resources>

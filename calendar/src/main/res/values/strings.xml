@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">calendar</string>
+    <string name="img" />
+
+    <string name="dayOfWeek">dayOfWeek</string>
+    <string name="dayOfWeek1">T2</string>
+    <string name="dayOfWeek2">T3</string>
+    <string name="dayOfWeek3">T4</string>
+    <string name="dayOfWeek4">T5</string>
+    <string name="dayOfWeek5">T6</string>
+    <string name="dayOfWeek6">T7</string>
+    <string name="dayOfWeek7">CN</string>
+    <string name="dayOfMonth">dayOfMonth</string>
+
+    <string-array name="weekdays">
+        <item>@string/dayOfWeek</item>
+        <item>@string/dayOfWeek7</item>
+        <item>@string/dayOfWeek1</item>
+        <item>@string/dayOfWeek2</item>
+        <item>@string/dayOfWeek3</item>
+        <item>@string/dayOfWeek4</item>
+        <item>@string/dayOfWeek5</item>
+        <item>@string/dayOfWeek6</item>
+    </string-array>
+
+</resources>

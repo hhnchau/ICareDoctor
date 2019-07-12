@@ -1,16 +1,11 @@
 package vn.ptt.icaredoctor.activity;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import vn.ptt.icaredoctor.R;
-import vn.ptt.icaredoctor.fragment.HomeFragment;
 import vn.ptt.icaredoctor.fragmentcontroller.Fragmentez;
 import vn.ptt.icaredoctor.fragmentcontroller.Fragmentoz;
 import vn.ptt.icaredoctor.fragmentcontroller.Fragmentcz;
@@ -54,7 +49,7 @@ public class MainActivity extends BaseActivity {
                 if (tab == NavigationBottom.TAB1) {
                     onFragment(Fragmentez.FRAGMENT_HOME);
                 } else if (tab == NavigationBottom.TAB2) {
-                    onFragment(Fragmentez.FRAGMENT_MAP);
+                    onFragment(Fragmentez.FRAGMENT_SCHEDULE);
                 } else if (tab == NavigationBottom.TAB3) {
                     onFragment(Fragmentez.FRAGMENT_PAGE);
                 }
@@ -65,7 +60,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void onFragment(Fragmentez frgez) {
-        Fragmentcz.addFragment(lstFrg, getSupportFragmentManager(), frgez, false, R.id.frame, null, Fragmentcz.NEXT);
+        Fragmentcz.addFragment(lstFrg, getSupportFragmentManager(), frgez, false, R.id.frame, null, Fragmentcz.NONE);
         onToolbar(frgez);
     }
 

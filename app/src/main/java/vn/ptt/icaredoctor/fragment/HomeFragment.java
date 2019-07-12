@@ -25,27 +25,13 @@ public class HomeFragment extends BaseFragment {
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
 
-        GradientDrawable shape = new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,
-                new int[]{0xFF757775, 0xFF151515});
-        shape.setCornerRadius(20);
-
-
-//        MyEditText edt = view.findViewById(R.id.txt);
-//        edt.setBackground(MyDrawable.makeGradient(getActivity(), R.dimen.dp_1, R.color.blue, R.dimen.dp_8, R.color.colorPrimary));
-
-
-        Button btn = view.findViewById(R.id.btn);
-        btn.setBackground(MyDrawable.makeSelector(MyDrawable.makeGradient(getActivity(), R.dimen.dp_1, R.color.colorAccent, R.dimen.dp_8, R.color.colorAccent), MyDrawable.makeGradient(getActivity(), R.dimen.dp_1, R.color.green, R.dimen.dp_8, R.color.green)));
-
-        btn.setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 login();
             }
         });
 
-        RelativeLayout rl = view.findViewById(R.id.layout);
-        //rl.setBackground(MyDrawable.makeGradientColor());
 
         return view;
     }
