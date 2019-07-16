@@ -42,7 +42,7 @@ public class MyBanner extends FrameLayout {
         TabLayout tabLayout = view.findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewpager, true);
 
-        changeDotIndicator(tabLayout);
+        //changeDotIndicator(tabLayout);
 
         adapter.setOnClickListener(new BannerListener() {
             @Override
@@ -80,7 +80,7 @@ public class MyBanner extends FrameLayout {
 
     private void changeDotIndicator(TabLayout tabLayout) {
         ViewGroup.LayoutParams params = tabLayout.getLayoutParams();
-        params.height = (int) getResources().getDimension(R.dimen.dp_1);
+        params.height = (int) getResources().getDimension(R.dimen.dp_10);
         params.width = (int) getResources().getDimension(R.dimen.dp_50);
         tabLayout.setLayoutParams(params);
     }

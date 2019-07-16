@@ -22,6 +22,21 @@
     <string name="txt_login">Đăng Nhập</string>
     <string name="txt_reset_pass">Đặt Lại Mật Khẩu</string>
 
+    <string name="txt_circuit">Mạch</string>
+    <string name="txt_blomin">Huyết Áp</string>
+    <string name="txt_blomin_max">H.A Tối Đa</string>
+    <string name="txt_blomin_min">H.A Tối Thiểu</string>
+    <string name="txt_temper">Nhiệt Độ</string>
+    <string name="txt_heartb">Nhịp Tim</string>
+    <string name="txt_weight">Cân Nặng</string>
+    <string name="txt_diagnose">Chẩn Đoán</string>
+    <string name="txt_drug">Kê Đơn</string>
+    <string name="txt_service">Chỉ Định</string>
+    <string name="txt_drug_name">Tên Thuốc</string>
+    <string name="txt_number">Số Lượng</string>
+    <string name="txt_unit_name">ĐVT</string>
+    <string name="txt_use">Cách Dùng</string>
+
     <string name="screen_home">@string/app_name</string>
     <string name="screen_schedule">Đặt Lịch Khám</string>
     <string name="screen_page">Hồ Sơ</string>

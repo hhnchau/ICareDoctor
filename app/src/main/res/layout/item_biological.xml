@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_24"
+    android:orientation="horizontal">
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvCircuits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:layout_weight="1"
+        android:hint="@string/txt_circuit"
+        android:textSize="@dimen/sp_14"
+        app:hintSize="@dimen/sp_11" />
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvBloodMax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:layout_weight="1"
+        android:hint="@string/txt_blomin_max"
+        android:textSize="@dimen/sp_14"
+        app:hintSize="@dimen/sp_11"/>
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvBloodMin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:layout_weight="1"
+        android:hint="@string/txt_blomin_min"
+        android:textSize="@dimen/sp_14"
+        app:hintSize="@dimen/sp_11"/>
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvTemperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:layout_weight="1"
+        android:hint="@string/txt_temper"
+        android:textSize="@dimen/sp_14"
+        app:hintSize="@dimen/sp_11"/>
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvHeartbeat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:layout_weight="1"
+        android:hint="@string/txt_heartb"
+        android:textSize="@dimen/sp_14"
+        app:hintSize="@dimen/sp_11"/>
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvWeights"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_4"
+        android:layout_weight="1"
+        android:hint="@string/txt_weight"
+        android:textSize="@dimen/sp_14"
+        app:hintSize="@dimen/sp_11"/>
+
+</LinearLayout>

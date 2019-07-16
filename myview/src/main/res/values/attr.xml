@@ -4,6 +4,7 @@
         <attr name="android:hint"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="hintSize" format="integer" />
         <attr name="android:textColor"/>
     </declare-styleable>
 

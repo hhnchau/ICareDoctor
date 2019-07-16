@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/sp_16">
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvDrugName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_drug_name"
+        android:textSize="@dimen/sp_14"
+        app:hintSize="@dimen/sp_11"
+        app:layout_constraintBottom_toTopOf="@id/tvUse"
+        app:layout_constraintEnd_toStartOf="@id/tvNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_number"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_16"
+        android:textSize="@dimen/sp_14"
+        app:hintSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@id/tvDrugName"
+        app:layout_constraintEnd_toStartOf="@id/tvUnit"
+        app:layout_constraintStart_toEndOf="@id/tvDrugName"
+        app:layout_constraintTop_toTopOf="@id/tvDrugName" />
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_unit_name"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingEnd="@dimen/dp_16"
+        android:textSize="@dimen/sp_14"
+        app:hintSize="@dimen/sp_11"
+        app:layout_constraintBottom_toBottomOf="@id/tvDrugName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvNumber"
+        app:layout_constraintTop_toTopOf="@id/tvDrugName" />
+
+    <vn.ptt.myview.textview.MyTextView
+        android:id="@+id/tvUse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/txt_use"
+        android:textSize="@dimen/sp_10"
+        app:hintSize="@dimen/sp_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/tvUnit"
+        app:layout_constraintStart_toStartOf="@id/tvDrugName"
+        app:layout_constraintTop_toBottomOf="@id/tvDrugName" />
+
+</android.support.constraint.ConstraintLayout>

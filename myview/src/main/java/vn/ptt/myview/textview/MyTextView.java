@@ -18,7 +18,7 @@ import vn.ptt.myview.R;
 public class MyTextView extends LinearLayout {
     private TextView tvHint, tvText;
     private CharSequence hint, text;
-    private int textSize;
+    private int textSize, hintSize;
     private ColorStateList textColor;
 
     public MyTextView(Context context) {
@@ -43,6 +43,7 @@ public class MyTextView extends LinearLayout {
         hint = typedArray.getString(R.styleable.MyTextView_android_hint);
         text = typedArray.getString(R.styleable.MyTextView_android_text);
         textSize = typedArray.getDimensionPixelSize(R.styleable.MyTextView_android_textSize, 0);
+        hintSize = typedArray.getDimensionPixelSize(R.styleable.MyTextView_hintSize, 0);
         textColor = typedArray.getColorStateList(R.styleable.MyTextView_android_textColor);
         typedArray.recycle();
     }
@@ -56,6 +57,7 @@ public class MyTextView extends LinearLayout {
             tvText = findViewById(R.id.text);
             if (textSize > 0)
                 tvText.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize);
+            if (hintSize > 0) tvHint.setTextSize(TypedValue.COMPLEX_UNIT_PX, hintSize);
             if (textColor != null) tvText.setTextColor(textColor);
             if (!TextUtils.isEmpty(hint)) tvHint.setText(hint);
             if (!TextUtils.isEmpty(text)) tvText.setText(text);

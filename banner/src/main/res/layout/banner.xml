@@ -18,6 +18,6 @@
         app:tabBackground="@drawable/indicator"
         app:tabGravity="center"
         app:tabIndicatorHeight="0dp"
-        app:tabMaxWidth="0dp" />
+        app:tabMaxWidth="@dimen/dp_14" />
 
 </FrameLayout>

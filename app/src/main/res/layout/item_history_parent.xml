@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/dp_8"
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/dp_4"
+        android:backgroundTint="@color/white"
         android:elevation="@dimen/dp_2"
+        app:cardCornerRadius="@dimen/dp_4"
         app:cardPreventCornerOverlap="false"
         app:cardUseCompatPadding="true">
 
@@ -19,7 +19,8 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="@dimen/dp_4"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_4"
             android:layout_weight="1">
 
             <TextView
@@ -29,16 +30,16 @@
                 android:layout_marginStart="@dimen/dp_8"
                 android:layout_marginEnd="@dimen/dp_8"
                 android:ellipsize="end"
-                android:textColor="@color/text_color"
                 android:gravity="center_vertical"
-                android:textSize="@dimen/sp_15"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/sp_14"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@id/guide"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tvDate"
+                android:id="@+id/tvCount"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:gravity="center"
@@ -47,23 +48,23 @@
                 android:textSize="@dimen/sp_14"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/ic_expand"
+                app:layout_constraintEnd_toStartOf="@id/arrow"
                 app:layout_constraintStart_toStartOf="@id/guide"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/ic_expand"
+                android:id="@+id/arrow"
                 android:layout_width="@dimen/dp_40"
                 android:layout_height="@dimen/dp_40"
-                android:padding="@dimen/dp_4"
-                android:layout_marginEnd="@dimen/dp_16"
+                android:layout_marginEnd="@dimen/dp_8"
                 android:background="?selectableItemBackgroundBorderless"
-                android:contentDescription="@string/img"
+                android:contentDescription="@string/img_des"
+                android:padding="@dimen/dp_8"
                 android:src="@drawable/ic_arrow"
-                app:layout_constraintBottom_toBottomOf="@id/tvDate"
+                app:layout_constraintBottom_toBottomOf="@id/tvCount"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/tvDate"
-                app:layout_constraintTop_toTopOf="@id/tvDate" />
+                app:layout_constraintStart_toEndOf="@id/tvCount"
+                app:layout_constraintTop_toTopOf="@id/tvCount" />
 
             <android.support.constraint.Guideline
                 android:id="@+id/guide"
@@ -80,6 +81,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rcvChild"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16" />
 
 </LinearLayout>

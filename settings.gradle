@@ -1,1 +1,1 @@
-include ':app', ':apicontroller', ':model', ':image', ':utils', ':myview', ':calendar', ':banner'
+include ':app', ':apicontroller', ':model', ':image', ':utils', ':myview', ':calendar', ':banner', ':adapter'
