@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/img"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="@id/h2"
         app:layout_constraintEnd_toEndOf="@id/v2"
         app:layout_constraintStart_toStartOf="@id/v1"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="@id/h2">
 
         <EditText
-            android:id="@+id/edtUserName"
+            android:id="@+id/edtNickname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_6"
@@ -41,7 +41,7 @@
             android:textSize="@dimen/sp_16" />
 
         <EditText
-            android:id="@+id/edtPhone"
+            android:id="@+id/edtUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_6"
@@ -70,7 +70,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_6"
             android:text="@string/txt_register"
-            android:textSize="@dimen/sp_16" />
+            android:textSize="@dimen/sp_16"
+            android:onClick="signUp"/>
 
     </LinearLayout>
 

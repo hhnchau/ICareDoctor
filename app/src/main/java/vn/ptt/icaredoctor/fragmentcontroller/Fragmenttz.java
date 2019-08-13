@@ -11,17 +11,17 @@ public class Fragmenttz {
         switch (fzg) {
             case FRAGMENT_HOME:
                 toolbarTile.setText(context.getString(R.string.screen_home));
-                toolbarLeft.setImageResource(R.drawable.ic_launcher_background);
+                toolbarLeft.setImageResource(R.drawable.logo);
                 toolbarRight.setImageResource(0);
                 break;
             case FRAGMENT_SCHEDULE:
                 toolbarTile.setText(context.getString(R.string.screen_schedule));
-                toolbarLeft.setImageResource(R.drawable.ic_launcher_background);
+                toolbarLeft.setImageResource(R.drawable.logo);
                 toolbarRight.setImageResource(0);
                 break;
             case FRAGMENT_PAGE:
                 toolbarTile.setText(context.getString(R.string.screen_page));
-                toolbarLeft.setImageResource(R.drawable.ic_launcher_background);
+                toolbarLeft.setImageResource(R.drawable.logo);
                 toolbarRight.setImageResource(0);
                 break;
 

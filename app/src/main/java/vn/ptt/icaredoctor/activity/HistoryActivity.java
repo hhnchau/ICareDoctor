@@ -17,10 +17,12 @@ import vn.ptt.model.history.HistoryClinicDomain;
 import vn.ptt.model.history.HistoryClinicResponse;
 import vn.ptt.model.service.Service;
 import vn.ptt.myview.toolbar.MyToolbar;
+import vn.ptt.utils.Storage;
 
 public class HistoryActivity extends BaseActivity {
     private RecyclerView rcv;
     private List<HistoryClinicDomain> lstHistory = new ArrayList<>();
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,8 +67,10 @@ public class HistoryActivity extends BaseActivity {
     }
 
     private void getHistoryClinic() {
+        String patId = Storage.getInstance(this).getPatId();
+        if (patId == null) return;
         if (MyApplication.getUrl(Service.PAT) != null) {
-            ApiController.getInstance().getHistoryClinic(this, MyApplication.getUrl(Service.PAT), "9976b9d6-ee9d-4c83-9d03-348fd0bb28c4", new LCallback<HistoryClinicDomain>() {
+            ApiController.getInstance().getHistoryClinic(this, MyApplication.getUrl(Service.PAT), patId, new LCallback<HistoryClinicDomain>() {
                 @Override
                 public void response(List<HistoryClinicDomain> list) {
                     lstHistory = list;

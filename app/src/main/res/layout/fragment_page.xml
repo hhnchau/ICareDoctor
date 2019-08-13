@@ -17,7 +17,7 @@
             android:layout_height="@dimen/dp_70"
             android:contentDescription="@string/img"
             android:padding="@dimen/dp_8"
-            android:src="@drawable/ic_launcher_background"
+            android:src="@drawable/banner3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintEnd_toStartOf="@id/tvFullName"
             app:layout_constraintStart_toStartOf="parent"

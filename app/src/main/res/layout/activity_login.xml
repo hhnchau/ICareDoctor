@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/img"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="@id/h2"
         app:layout_constraintEnd_toEndOf="@id/v2"
         app:layout_constraintStart_toStartOf="@id/v1"
@@ -38,7 +38,7 @@
             android:paddingStart="@dimen/dp_12"
             android:paddingEnd="@dimen/dp_12"
             android:hint="@string/txt_phone"
-            android:inputType="phone"
+            android:inputType="text"
             android:textSize="@dimen/sp_16" />
 
         <EditText
@@ -71,7 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_6"
             android:text="@string/txt_login"
-            android:textSize="@dimen/sp_16" />
+            android:textSize="@dimen/sp_16"
+            android:onClick="signIn"/>
 
     </LinearLayout>
 

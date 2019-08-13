@@ -20,13 +20,39 @@ public class Storage {
         return instance;
     }
 
-    public void setUserName(String userName) {
-        editor.putString("user-name", userName);
+    public void setIdUser(String idUser) {
+        editor.putString("id-user", idUser);
         editor.commit();
     }
 
-    public String getUserName() {
-        return preferences.getString("user-name", "");
+    public String getIdUser() {
+        return preferences.getString("id-user", "");
     }
 
+    public void setToken(String token) {
+        editor.putString("token", token);
+        editor.commit();
+    }
+
+    public String getToken() {
+        return preferences.getString("token", "");
+    }
+
+    public void setUserDomain(String userDomain) {
+        editor.putString("user-domain", userDomain);
+        editor.apply();
+    }
+
+    public String getUserDomain() {
+        return preferences.getString("user-domain", "");
+    }
+
+    public void setPatId(String patId) {
+        editor.putString("pat-id", patId);
+        editor.commit();
+    }
+
+    public String getPatId() {
+        return preferences.getString("pat-id", null);
+    }
 }

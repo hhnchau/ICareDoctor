@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/img"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="@id/h2"
         app:layout_constraintEnd_toEndOf="@id/v2"
         app:layout_constraintStart_toStartOf="@id/v1"

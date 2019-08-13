@@ -15,6 +15,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import vn.ptt.apicontroller.ApiController;
+import vn.ptt.apicontroller.sys.Alert;
 import vn.ptt.banner.Banner;
 import vn.ptt.banner.BannerListener;
 import vn.ptt.banner.MyBanner;
@@ -33,27 +35,12 @@ public class HomeFragment extends BaseFragment {
 
         MyBanner myBanner = view.findViewById(R.id.banner);
         List<Banner> lst = new ArrayList<>();
-        lst.add(new Banner("Title-1", R.drawable.ic_launcher_background, R.layout.banner_item));
-        lst.add(new Banner("Title-2", R.drawable.ic_launcher_background, R.layout.banner_item));
-        lst.add(new Banner("Title-3", R.drawable.ic_launcher_background, R.layout.banner_item));
-        lst.add(new Banner("Title-4", R.drawable.ic_launcher_background, R.layout.banner_item));
+        lst.add(new Banner("Title-1", R.drawable.banner1, R.layout.banner_item));
+        lst.add(new Banner("Title-2", R.drawable.banner2, R.layout.banner_item));
+        lst.add(new Banner("Title-3", R.drawable.banner3, R.layout.banner_item));
+        lst.add(new Banner("Title-4", R.drawable.banner4, R.layout.banner_item));
         myBanner.create(lst, null);
-
-
-        view.findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                login();
-            }
-        });
-
 
         return view;
     }
-
-    private void login() {
-        startActivity(new Intent(getActivity(), LoginActivity.class));
-        //IntentAnimator.fade(getActivity());
-    }
-
 }

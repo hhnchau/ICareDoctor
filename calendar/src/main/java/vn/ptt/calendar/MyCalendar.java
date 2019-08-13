@@ -84,7 +84,7 @@ public class MyCalendar extends LinearLayout {
     }
 
     private void handleCalendar() {
-        String month = CalendarUtils.getCurrentMonth(calendar, currentMonth).toUpperCase(Locale.getDefault()) + " " + CalendarUtils.getYear(calendar);
+        String month = CalendarUtils.getCurrentMonth(currentMonth).toUpperCase(Locale.getDefault()) + " " + CalendarUtils.getYear(calendar);
         tvMonth.setText(month);
 
         Calendar mCalendar = Calendar.getInstance(getContext().getResources().getConfiguration().locale);
@@ -112,10 +112,10 @@ public class MyCalendar extends LinearLayout {
 
             if (CalendarUtils.isSameMonth(mCalendar, startCalendar)) {
                 dayView.setOnClickListener(onClickListener);
-                //dayView.setBackgroundColor(getContext().getResources().getColor(R.color.org));
+                dayView.setBackgroundResource(0);
                 dayView.setTextColor(getContext().getResources().getColor(R.color.green));
             } else {
-                dayView.setBackgroundResource(R.drawable.round);
+                //dayView.setBackgroundResource(R.drawable.round);
                 dayView.setTextColor(getContext().getResources().getColor(R.color.red));
                 if (!showDisableDate)
                     dayView.setVisibility(View.INVISIBLE);
